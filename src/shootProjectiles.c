@@ -3,7 +3,6 @@
 #include <time.h>
 #include "shootProjectiles.h"
 #include "updateSprites.h"
-#include "sound.h"
 
 int playershot;
 
@@ -13,7 +12,6 @@ void shootProjectiles(void)
     {
         if (1) 
         {
-            playSound();
             for (i = 0; i < MAX_PROJECTILES; i++)
             {
                 if (!ls[i])

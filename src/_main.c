@@ -4,7 +4,6 @@
 #include "bg.h"
 #include "sprites.h"
 #include "player.h"
-#include "sound.h"
 #include "playerMovement.h"
 #include "detectCollisions.h"
 #include "delay.h"
