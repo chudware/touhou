@@ -12,7 +12,7 @@ Touhou demake
 
 ```sh
 # Clone this repo
-git clone https://github.com/chudware/touhou.git
+git clone https://github.com/talbott9/touhou.git
 cd touhou
 
 # Create a build folder
