@@ -18,7 +18,7 @@ void updateSprites(void)
             move_sprite(BASE_TILE_PROJECTILE + i, lx[i], ly[i]);
         }
     }
-    
+
     // update enemy
     move_sprite(21, enemyX, enemyY);
     move_sprite(22, enemyX, enemyY + 8 * 1);

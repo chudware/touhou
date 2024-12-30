@@ -36,8 +36,8 @@ void checkCol(void)
                 // check player enemy-collision
                 ls[i] = FALSE; // disable projectile
                 enemyHP -= 1;
-		if(enemyHP < 0)
-		  enemyHP = 0;
+                if (enemyHP < 0)
+                    enemyHP = 0;
             }
         }
     }
@@ -52,8 +52,8 @@ void checkCol(void)
                 // check -collision
                 enemyLS[enemyshotIndex] = FALSE; // disable projectile
                 playerHP -= 1;
-		if(playerHP < 0)
-		  playerHP = 0;
+                if (playerHP < 0)
+                    playerHP = 0;
             }
         }
     }
