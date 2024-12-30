@@ -1,9 +1,6 @@
 #ifndef DETECTCOLLISIONS_H
 #define DETECTCOLLISIONS_H
 
-#define MAX_PROJECTILES 16
-#define ENEMY_MAX_PROJECTILES 10
-
 extern int playerX;
 extern int playerY;
 extern int enemyX;

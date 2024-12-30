@@ -1,6 +1,7 @@
 #include <gb/gb.h>
 #include <stdio.h>
 #include <time.h>
+#include "_global.h"
 #include "bg.h"
 #include "assets.h"
 #include "playerMovement.h"
@@ -9,29 +10,6 @@
 #include "displayHP.h"
 #include "collisions.h"
 #include "updateSprites.h"
-
-#define SP_PROJECTILE 5
-
-// projectiles
-int PROJECTILE_SIZE = 8;
-int ls[MAX_PROJECTILES];
-int lx[MAX_PROJECTILES]; // projectile x's
-int ly[MAX_PROJECTILES]; // projectile y's
-int i;
-int n;
-
-// player
-int playerX = 80;
-int playerY = 128;
-int playerSpeed = 1;
-int playerSize = 16;
-int playerHP = 100;
-
-// enemy
-int enemyHP = 100;
-int enemyX = 80;
-int enemyY = 20;
-int enemySize = 16;
 
 void main(void)
 {
@@ -76,7 +54,7 @@ void main(void)
         enemyShoot();
         moveEnemyProjectiles();
         updateEnemyProjectiles();
-        
+
         // check for collision and update sprites
         checkCol();
         updateSprites();

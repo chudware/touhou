@@ -3,4 +3,5 @@
 
 void displayEnemyHP(int *enemyHP);
 void displayPlayerHP(int *playerHP);
+
 #endif

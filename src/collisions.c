@@ -1,7 +1,10 @@
-#include "collisions.h"
 #include <gb/gb.h>
+#include "_global.h"
+#include "collisions.h"
+#include "enemy.h"
 
-int detectCollisions(int x1, int y1, int x2, int y2, int size1, int size2) {
+int detectCollisions(int x1, int y1, int x2, int y2, int size1, int size2)
+{
     int left1 = x1 - size1 / 2;
     int right1 = x1 + size1 / 2;
     int top1 = y1 - size1 / 2;

@@ -1,12 +1,7 @@
 #include <gb/gb.h>
+#include "_global.h"
 #include "assets.h"
 #include "enemy.h"
-
-int enemyshotIndex;
-int enemyshot;
-int enemyLS[ENEMY_MAX_PROJECTILES];
-int enemyLX[ENEMY_MAX_PROJECTILES]; // projectile x's
-int enemyLY[ENEMY_MAX_PROJECTILES]; // projectile y's
 
 void enemyShoot(void)
 {
@@ -60,7 +55,8 @@ void updateEnemyProjectiles(void)
     }
 }
 
-void setEnemy(int16_t *enemyX, int16_t *enemyY) {
+void setEnemy(int16_t *enemyX, int16_t *enemyY)
+{
     set_sprite_tile(21, 9);
     move_sprite(21, *enemyX, *enemyY);
     set_sprite_tile(22, 10);

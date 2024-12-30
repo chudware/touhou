@@ -1,16 +1,14 @@
 #include <stdbool.h>
 #include <gb/gb.h>
 #include <time.h>
-
+#include "_global.h"
 #include "updateSprites.h"
-
-int playershot;
 
 void shootPlayerProjectiles(void)
 {
     if (joypad() & J_A)
     {
-        if (1) 
+        if (1)
         {
             for (i = 0; i < MAX_PROJECTILES; i++)
             {

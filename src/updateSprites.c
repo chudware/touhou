@@ -2,7 +2,6 @@
 #include "updateSprites.h"
 #include "collisions.h"
 
-
 void updateSprites(void)
 {
     // player
@@ -30,4 +29,3 @@ void updateSprites(void)
     move_sprite(27, enemyX, enemyY + 8 * 3);
     move_sprite(28, enemyX + 8, enemyY + 8 * 3);
 }
-
