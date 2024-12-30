@@ -23,7 +23,7 @@ cd build
 make
 
 # Run
-mgba ./build/_Game.gb
+mgba ./build/touhou.gb
 ```
 
 ***Note:*** Edit the makefile to point it to your GBDK installation
