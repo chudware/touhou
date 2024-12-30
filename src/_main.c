@@ -20,7 +20,7 @@ void resetGame(void)
 
   // reset health
   playerHP = 100;
-  enemyHP = 100;
+  enemyHP = 500;
 
   // sets bg
   set_bkg_data(0, 23, assetsTileLabel);

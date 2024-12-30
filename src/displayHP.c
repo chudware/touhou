@@ -31,23 +31,23 @@ void displayPlayerHP(void)
 void displayEnemyHP(void)
 {
 
-    if (enemyHP == 100)
+    if (enemyHP == 500)
     {
         set_sprite_tile(29, 21); // full
     }
-    if (enemyHP <= 99)
+    if (enemyHP <= 375)
     {
         set_sprite_tile(29, 20); // mostly full
     }
-    if (enemyHP <= 50)
+    if (enemyHP <= 250)
     {
-        set_sprite_tile(29, 19); // mostly full
+        set_sprite_tile(29, 19); // half full
     }
-    if (enemyHP <= 25)
+    if (enemyHP <= 125)
     {
-        set_sprite_tile(29, 18); // mostly full
+        set_sprite_tile(29, 18); // mostly empty
     }
-    if (enemyHP <= 0)
+    if (enemyHP == 0)
     {
         set_sprite_tile(29, 17); // empty
     }

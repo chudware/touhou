@@ -5,7 +5,7 @@
 // player
 int playerX = 80;
 int playerY = 128;
-int playerHP = 100;
+int playerHP;
 int playerSize = 16;
 int playershot;
 int playerSpeed = 1;
@@ -19,7 +19,7 @@ int ly[MAX_PROJECTILES]; // projectile y's
 // enemy
 int enemyX = 80;
 int enemyY = 20;
-int enemyHP = 100;
+int enemyHP;
 int enemySize = 16;
 int enemyshot;
 int enemyshotIndex;
