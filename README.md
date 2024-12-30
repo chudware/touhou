@@ -2,9 +2,6 @@
 
 Touhou demake
 
-![alt text](game.png "Game")
-![alt text](gameover.png "Game over")
-
 ## Dependencies
 
 - [GBDK][GBDK] Game Boy Development Kit
