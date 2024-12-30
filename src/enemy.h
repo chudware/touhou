@@ -16,5 +16,5 @@ extern int enemyLY[ENEMY_MAX_PROJECTILES]; // projectile y's
 void enemyShoot(void);
 void moveEnemyProjectiles(void);
 void updateEnemyProjectiles(void);
-
+void setEnemy(int16_t *enemyX, int16_t *enemyY);
 #endif

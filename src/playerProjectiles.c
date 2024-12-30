@@ -1,12 +1,12 @@
 #include <stdbool.h>
 #include <gb/gb.h>
 #include <time.h>
-#include "shootProjectiles.h"
+
 #include "updateSprites.h"
 
 int playershot;
 
-void shootProjectiles(void)
+void shootPlayerProjectiles(void)
 {
     if (joypad() & J_A)
     {
@@ -28,5 +28,20 @@ void shootProjectiles(void)
     else if (!(joypad() & J_A))
     {
         playershot = 0;
+    }
+}
+
+void movePlayerProjectiles(void)
+{
+    for (int i = 0; i < MAX_PROJECTILES; i++)
+    {
+        if (ls[i])
+        {
+            ly[i] -= 10;
+            if (ly[i] <= 0)
+            {
+                ls[i] = FALSE;
+            }
+        }
     }
 }

@@ -4,15 +4,11 @@
 #include "bg.h"
 #include "assets.h"
 #include "playerMovement.h"
-#include "detectCollisions.h"
-#include "displayPlayerHP.h"
-#include "limitPlayer.h"
-#include "setEnemy.h"
-#include "displayEnemyHP.h"
-#include "updateSprites.h"
-#include "shootProjectiles.h"
-#include "moveProjectiles.h"
+#include "playerProjectiles.h"
 #include "enemy.h"
+#include "displayHP.h"
+#include "collisions.h"
+#include "updateSprites.h"
 
 #define SP_PROJECTILE 5
 
@@ -23,8 +19,6 @@ int lx[MAX_PROJECTILES]; // projectile x's
 int ly[MAX_PROJECTILES]; // projectile y's
 int i;
 int n;
-
-
 
 // player
 int playerX = 80;
@@ -70,16 +64,10 @@ void main(void)
     {
         scroll_bkg(0, -1);
 
-        // moves enemy
-        //enemyY += 1;
-
-        // check for collision
-        checkCol();
-
         // player
         displayPlayerHP(&playerHP);
-        shootProjectiles();
-        move_PROJECTILES();
+        shootPlayerProjectiles();
+        movePlayerProjectiles();
         playerMovement(&playerX, &playerY);
         limitPlayer(&playerX, &playerY);
 
@@ -88,7 +76,9 @@ void main(void)
         enemyShoot();
         moveEnemyProjectiles();
         updateEnemyProjectiles();
-
+        
+        // check for collision and update sprites
+        checkCol();
         updateSprites();
         delay(10); // vsync();
     }

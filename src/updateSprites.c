@@ -1,6 +1,6 @@
 #include <gb/gb.h>
 #include "updateSprites.h"
-#include "detectCollisions.h"
+#include "collisions.h"
 
 
 void updateSprites(void)
@@ -31,39 +31,3 @@ void updateSprites(void)
     move_sprite(28, enemyX + 8, enemyY + 8 * 3);
 }
 
-void checkCol(void)
-{
-    // Check player-enemy collision
-    if (detectCollisions(playerX, playerY, enemyX, enemyY, playerSize, enemySize))
-    {
-        playerHP -= playerSpeed;
-    }
-
-    // Check projectile-enemy collisions
-    for (int i = 0; i < MAX_PROJECTILES; i++)
-    {
-        if (ls[i])
-        {
-            if (detectCollisions(lx[i], ly[i], enemyX, enemyY, PROJECTILE_SIZE, enemySize))
-            {
-                // check player enemy-collision
-                ls[i] = FALSE; // disable projectile
-                enemyHP -= 1;
-            }
-        }
-    }
-
-    // Check  collisions
-    for (int enemyshotIndex = 0; enemyshotIndex < ENEMY_MAX_PROJECTILES; enemyshotIndex++)
-    {
-        if (enemyLS[enemyshotIndex])
-        {
-            if (detectCollisions(enemyLX[enemyshotIndex], enemyLY[enemyshotIndex], playerX, playerY, PROJECTILE_SIZE, playerSize))
-            {
-                // check -collision
-                enemyLS[enemyshotIndex] = FALSE; // disable projectile
-                playerHP -= 1;
-            }
-        }
-    }
-}

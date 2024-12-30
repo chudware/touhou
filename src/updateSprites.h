@@ -25,6 +25,6 @@ extern int enemyY;
 
 void updateSprites(void);
 
-void checkCol(void);
+
 
 #endif
