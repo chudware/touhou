@@ -8,19 +8,19 @@ void displayPlayerHP(int *playerHP)
     {
         set_sprite_tile(30, 21); // full
     }
-    if (*playerHP <= 99)
+    else if (*playerHP <= 99)
     {
         set_sprite_tile(30, 20); // mostly full
     }
-    if (*playerHP <= 50)
+    else if (*playerHP <= 50)
     {
         set_sprite_tile(30, 19); // mostly full
     }
-    if (*playerHP <= 25)
+    else if (*playerHP <= 25)
     {
         set_sprite_tile(30, 18); // mostly full
     }
-    if (*playerHP <= 0)
+    else if (*playerHP <= 0)
     {
         set_sprite_tile(30, 17); // mostly full
     }
@@ -35,19 +35,19 @@ void displayEnemyHP(int *enemyHP)
     {
         set_sprite_tile(29, 21); // full
     }
-    if (*enemyHP <= 99)
+    else if (*enemyHP <= 99)
     {
         set_sprite_tile(29, 20); // mostly full
     }
-    if (*enemyHP <= 50)
+    else if (*enemyHP <= 50)
     {
         set_sprite_tile(29, 19); // mostly full
     }
-    if (*enemyHP <= 25)
+    else if (*enemyHP <= 25)
     {
         set_sprite_tile(29, 18); // mostly full
     }
-    if (*enemyHP <= 0)
+    else if (*enemyHP <= 0)
     {
         set_sprite_tile(29, 17); // mostly full
     }
