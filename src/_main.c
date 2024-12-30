@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 #include "bg.h"
-#include "sprites.h"
-#include "player.h"
+#include "assets.h"
 #include "playerMovement.h"
 #include "detectCollisions.h"
 #include "displayPlayerHP.h"
@@ -43,7 +42,7 @@ int enemySize = 16;
 void main(void)
 {
     // sets bg
-    set_bkg_data(0, 4, spritesTileLabel);
+    set_bkg_data(0, 23, assetsTileLabel);
     set_bkg_tiles(0, 0, bgTilemapWidth, bgTilemapHeight, bgTilemap);
     SHOW_BKG;
 
@@ -51,7 +50,7 @@ void main(void)
     SPRITES_8x8;
 
     // player sprites
-    set_sprite_data(1, 22, playerTileLabel);
+    set_sprite_data(1, 23, assetsTileLabel);
 
     set_sprite_tile(1, 1);
     set_sprite_tile(2, 2);

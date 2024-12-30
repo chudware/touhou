@@ -1,6 +1,6 @@
 /*
 
- SPRITES.H
+ ASSETS.H
 
  Include File.
 
@@ -10,11 +10,11 @@
   Compression          : None.
   Counter              : None.
   Tile size            : 8 x 8
-  Tiles                : 0 to 4
+  Tiles                : 0 to 22
 
   Palette colors       : None.
   SGB Palette          : None.
-  CGB Palette          : 1 Byte per entry.
+  CGB Palette          : None.
 
   Convert to metatiles : No.
 
@@ -22,16 +22,14 @@
 
 */
 
-#ifndef __sprites_h_INCLUDE
-#define __sprites_h_INCLUDE
+#ifndef __assets_h_INCLUDE
+#define __assets_h_INCLUDE
 
 /* Bank of tiles. */
-#define spritesTileLabelBank 0
-/* CGBpalette entries. */
-extern const unsigned char spritesTileLabelCGB[];
+#define assetsTileLabelBank 0
 /* Start of tile array. */
-extern const unsigned char spritesTileLabel[];
+extern const unsigned char assetsTileLabel[];
 
 #endif
 
-/* End of SPRITES.H */
+/* End of ASSETS.H */

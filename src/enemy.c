@@ -1,5 +1,5 @@
 #include <gb/gb.h>
-#include "sprites.h"
+#include "assets.h"
 #include "enemy.h"
 
 int enemyshotIndex;
