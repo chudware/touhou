@@ -1,7 +1,10 @@
 #ifndef DISPLAYHP_H
 #define DISPLAYHP_H
 
-void displayEnemyHP(int *enemyHP);
-void displayPlayerHP(int *playerHP);
+extern int playerHP;
+extern int enemyHP;
+
+void displayEnemyHP(void);
+void displayPlayerHP(void);
 
 #endif

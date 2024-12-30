@@ -59,14 +59,14 @@ void main(void)
       scroll_bkg(0, -1);
 
       // player
-      displayPlayerHP(&playerHP);
+      displayPlayerHP();
       shootPlayerProjectiles();
       movePlayerProjectiles();
       playerMovement(&playerX, &playerY);
       limitPlayer(&playerX, &playerY);
 
       // enemy
-      displayEnemyHP(&enemyHP);
+      displayEnemyHP();
       enemyShoot();
       moveEnemyProjectiles();
       updateEnemyProjectiles();
