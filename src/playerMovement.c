@@ -1,73 +1,35 @@
 #include <gb/gb.h>
+#include "_global.h"
 #include "playerMovement.h"
 
-void playerMovement(int16_t *playerX, int16_t *playerY)
+void playerMovement(void)
 {
-  // player movement
-  /*
-    if (joypad() & J_RIGHT)
-    {
-        *playerX += 1;
-    }
-    if (joypad() & J_LEFT)
-    {
-        *playerX -= 1;
-    }
-    if (joypad() & J_DOWN)
-    {
-        *playerY += 1;
-    }
-    if (joypad() & J_UP)
-    {
-        *playerY -= 1;
-    }
-  */
   // player movement
   if (joypad() & J_RIGHT)
   {
-    *playerX += 1;
-    if (*playerX >= 160)
-      *playerX -= 1;
+    playerX += 1;
+    if (playerX >= 152)
+      playerX -= 1;
   }
 
   if (joypad() & J_LEFT)
   {
-    *playerX -= 1;
-    if (*playerX <= 0)
-      *playerX += 1;
+    playerX -= 1;
+    if (playerX <= 8)
+      playerX += 1;
   }
 
   if (joypad() & J_DOWN)
   {
-    *playerY += 1;
-    if (*playerY >= 150)
-      *playerY -= 1;
+    playerY += 1;
+    if (playerY >= 144)
+      playerY -= 1;
   }
 
   if (joypad() & J_UP)
   {
-    *playerY -= 1;
-    if (*playerY <= 5)
-      *playerY += 1;
-  }
-}
-
-void limitPlayer(int16_t *playerX, int16_t *playerY)
-{
-  if (*playerX < 8)
-  {
-    *playerX++;
-  }
-  if (*playerX > 152)
-  {
-    *playerX--;
-  }
-  if (*playerY < 16)
-  {
-    *playerY++;
-  }
-  if (*playerY > 144)
-  {
-    *playerY--;
+    playerY -= 1;
+    if (playerY <= 16)
+      playerY += 1;
   }
 }

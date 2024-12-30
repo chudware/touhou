@@ -48,7 +48,7 @@ void resetGame(void)
     set_sprite_tile(i, 5);
   }
   // spawns boss/enemy
-  setEnemy(&enemyX, &enemyY);
+  setEnemy();
   SHOW_SPRITES;
   DISPLAY_ON;
 }
@@ -66,8 +66,7 @@ void main(void)
       displayPlayerHP();
       shootPlayerProjectiles();
       movePlayerProjectiles();
-      playerMovement(&playerX, &playerY);
-      limitPlayer(&playerX, &playerY);
+      playerMovement();
 
       // enemy
       displayEnemyHP();
