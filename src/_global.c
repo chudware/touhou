@@ -3,8 +3,8 @@
 #define ENEMY_MAX_PROJECTILES 10 // Define the maximum number of enemy projectiles
 
 // player
-int playerX = 80;
-int playerY = 128;
+int playerX;
+int playerY;
 int playerHP;
 int playerSize = 16;
 int playershot;

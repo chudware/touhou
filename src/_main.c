@@ -22,6 +22,10 @@ void resetGame(void)
   playerHP = 100;
   enemyHP = 500;
 
+  // reset player position
+  playerX = 80;
+  playerY = 128;
+
   // sets bg
   set_bkg_data(0, 23, assetsTileLabel);
   set_bkg_tiles(0, 0, bgTilemapWidth, bgTilemapHeight, bgTilemap);
@@ -80,11 +84,11 @@ void main(void)
     {
       if (playerHP == 0)
       {
-        printf("you died");
+        printf("x");
       }
       if (enemyHP == 0)
       {
-        printf("enemy died");
+        printf("X");
       }
       resetTicks++;
       if (resetTicks > 120)
