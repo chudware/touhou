@@ -6,7 +6,6 @@
 #include "player.h"
 #include "playerMovement.h"
 #include "detectCollisions.h"
-#include "delay.h"
 #include "displayPlayerHP.h"
 #include "limitPlayer.h"
 #include "setEnemy.h"
