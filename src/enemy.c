@@ -1,8 +1,8 @@
 #include <gb/gb.h>
+#include <stdlib.h>
 #include "_global.h"
 #include "assets.h"
 #include "enemy.h"
-#include <stdlib.h>
 
 // projectile speed
 int enemyLDX[ENEMY_MAX_PROJECTILES];
@@ -12,7 +12,7 @@ int enemyLDY[ENEMY_MAX_PROJECTILES];
 void enemyShoot(void)
 {
     // shoot every n frames
-    if ((joypad() & J_B))
+    if (!quit)
     {
         if (1)
         {
@@ -31,7 +31,7 @@ void enemyShoot(void)
             enemyshot = 1;
         }
     }
-    else if (!(joypad() & J_B))
+    else if (quit)
     {
         enemyshot = 0;
     }

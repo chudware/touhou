@@ -15,4 +15,6 @@ void moveEnemyProjectiles(void);
 void updateEnemyProjectiles(void);
 void setEnemy(int16_t *enemyX, int16_t *enemyY);
 
+extern int quit;
+
 #endif
