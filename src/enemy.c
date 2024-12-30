@@ -2,29 +2,38 @@
 #include "_global.h"
 #include "assets.h"
 #include "enemy.h"
+#include <stdlib.h>
 
+//projectile speed
+int enemyLDX[ENEMY_MAX_PROJECTILES];
+int enemyLDY[ENEMY_MAX_PROJECTILES];
+
+//needs function for removing dead projectiles
 void enemyShoot(void)
 {
-    if (joypad() & J_B)
+  //shoot every n frames
+  if ((joypad() & J_B))
     {
         if (1)
         {
-            for (enemyshotIndex = 0; enemyshotIndex < ENEMY_MAX_PROJECTILES; enemyshotIndex++)
+            for (int enemyshotIndex = 0; enemyshotIndex < ENEMY_MAX_PROJECTILES; enemyshotIndex++)
             {
                 if (!enemyLS[enemyshotIndex])
                 {
                     enemyLS[enemyshotIndex] = TRUE;
                     enemyLX[enemyshotIndex] = enemyX + 4;
-                    enemyLY[enemyshotIndex] = enemyY;
-                    break;
+                    enemyLY[enemyshotIndex] = enemyY + 20;
+		    enemyLDY[enemyshotIndex] = 5+rand()%5;
+		    enemyLDX[enemyshotIndex] = enemyshotIndex-4;
+		    break;
                 }
             }
             enemyshot = 1;
         }
     }
-    else if (!(joypad() & J_B))
+  else if (!(joypad() & J_B))
     {
-        enemyshot = 0;
+      enemyshot = 0;
     }
 }
 
@@ -34,10 +43,14 @@ void moveEnemyProjectiles(void)
     {
         if (enemyLS[enemyshotIndex])
         {
-            enemyLY[enemyshotIndex] += 10;
-            if (enemyLY[enemyshotIndex] <= 0)
+	  //move the projectile
+	  enemyLY[enemyshotIndex] += enemyLDY[enemyshotIndex];
+	  enemyLX[enemyshotIndex] += enemyLDX[enemyshotIndex];
+	    //disable if out of screen
+	    if (enemyLY[enemyshotIndex] < 0 || enemyLY[enemyshotIndex] > 170 || enemyLX[enemyshotIndex] < 0 || enemyLX[enemyshotIndex] > 170)
             {
-                enemyLY[enemyshotIndex] = FALSE;
+	      enemyLS[enemyshotIndex] = FALSE;
+	      //enemyLY[enemyshotIndex] = FALSE;
             }
         }
     }
@@ -46,7 +59,7 @@ void moveEnemyProjectiles(void)
 void updateEnemyProjectiles(void)
 {
     // update player projectiles
-    for (enemyshotIndex = 0; enemyshotIndex < ENEMY_MAX_PROJECTILES; enemyshotIndex++)
+    for (int enemyshotIndex = 0; enemyshotIndex < ENEMY_MAX_PROJECTILES; enemyshotIndex++)
     {
         if (enemyLS[enemyshotIndex])
         {

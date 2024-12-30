@@ -3,7 +3,6 @@
 
 #define BASE_TILE_PROJECTILE 5 // sets starter tile id (after 1 - 4 for player)
 #define MAX_PROJECTILES 16
-#define ENEMY_MAX_PROJECTILES 10 // Define the maximum number of enemy projectiles
 
 // player
 extern int playerSpeed;
@@ -22,9 +21,6 @@ extern int enemyHP;
 extern int enemySize;
 extern int enemyX;
 extern int enemyY;
-extern int enemyLS[ENEMY_MAX_PROJECTILES];
-extern int enemyLX[ENEMY_MAX_PROJECTILES]; // projectile x's
-extern int enemyLY[ENEMY_MAX_PROJECTILES]; // projectile y's
 
 void updateSprites(void);
 

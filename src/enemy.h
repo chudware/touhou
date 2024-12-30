@@ -1,7 +1,7 @@
 #ifndef ENEMY_H
 #define ENEMY_H
 
-#define ENEMY_MAX_PROJECTILES 10
+#define ENEMY_MAX_PROJECTILES 10 // Define the maximum number of enemy projectiles
 
 // enemy
 extern int enemyX;
