@@ -27,7 +27,7 @@ void resetGame(void)
   playerY = 128;
 
   // sets bg
-  set_bkg_data(0, 23, assetsTileLabel);
+  set_bkg_data(0, 20, assetsTileLabel);
   set_bkg_tiles(0, 0, bgTilemapWidth, bgTilemapHeight, bgTilemap);
   SHOW_BKG;
 
@@ -35,7 +35,7 @@ void resetGame(void)
   SPRITES_8x8;
 
   // player sprites
-  set_sprite_data(1, 23, assetsTileLabel);
+  set_sprite_data(1, 21, assetsTileLabel);
 
   set_sprite_tile(1, 1);
   set_sprite_tile(2, 2);
@@ -45,7 +45,7 @@ void resetGame(void)
   // set projectile sprites
   for (i = 5; i < MAX_PROJECTILES; i++)
   { // id 5 to MAX_PROJECTILES
-    set_sprite_tile(i, 5);
+    set_sprite_tile(i, 6);
   }
   // spawns boss/enemy
   setEnemy();
@@ -83,11 +83,11 @@ void main(void)
     {
       if (playerHP == 0)
       {
-        printf("x");
+        printf("YOU DIED");
       }
       if (enemyHP == 0)
       {
-        printf("X");
+        printf("THE ENEMY DIED");
       }
       resetTicks++;
       if (resetTicks > 120)
