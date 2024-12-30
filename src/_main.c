@@ -14,9 +14,6 @@
 int quit = 0;
 int resetTicks = 0;
 
-extern int enemyLSpeedX[ENEMY_MAX_PROJECTILES]; // projectile horizontal speed
-extern int enemyLSpeedY[ENEMY_MAX_PROJECTILES]; // projectile vertical speed
-
 void resetGame(void)
 {
   resetTicks = 0;
