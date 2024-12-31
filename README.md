@@ -25,7 +25,7 @@ cd build
 make
 
 # Run
-mgba ./build/touhou.gb
+mgba ./build/_touhou.gb
 ```
 
 ***Note:*** Edit the makefile to point it to your GBDK installation
