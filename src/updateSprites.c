@@ -9,7 +9,13 @@ void updateSprites(void)
     move_sprite(2, playerX, playerY + 8);
     move_sprite(3, playerX + 8, playerY);
     move_sprite(4, playerX + 8, playerY + 8);
-
+    // show hit-box
+    if(playerIsFocus)
+      move_sprite(5, playerHitBoxX, playerHitBoxY);
+    else
+      //how to un-show sprite?
+      move_sprite(5, -1, -1);
+    
     // update player projectiles
     for (i = 0; i < MAX_PROJECTILES; i++)
     {

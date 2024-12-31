@@ -6,7 +6,7 @@
 # If you move this project you can change the directory 
 # to match your GBDK root directory (ex: GBDK_HOME = "C:/GBDK/"
 ifndef GBDK_HOME
-	GBDK_HOME = /Users/anon/Downloads/gbdk/
+	GBDK_HOME = gbdk/
 endif
 
 LCC = $(GBDK_HOME)bin/lcc 

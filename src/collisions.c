@@ -21,7 +21,7 @@ int detectCollisions(int x1, int y1, int x2, int y2, int size1, int size2)
 void checkCol(void)
 {
     // Check player-enemy collision
-    if (detectCollisions(playerX, playerY, enemyX, enemyY, playerSize, enemySize))
+    if (detectCollisions(playerHitBoxX, playerHitBoxY, enemyX, enemyY, playerHitBoxSize, enemySize))
     {
         playerHP -= playerSpeed;
     }
@@ -35,7 +35,7 @@ void checkCol(void)
             {
                 // check player enemy-collision
                 ls[i] = FALSE; // disable projectile
-                enemyHP -= 1;
+                enemyHP -= 10;
                 if (enemyHP < 0)
                     enemyHP = 0;
             }
@@ -47,7 +47,7 @@ void checkCol(void)
     {
         if (enemyLS[enemyshotIndex])
         {
-            if (detectCollisions(enemyLX[enemyshotIndex], enemyLY[enemyshotIndex], playerX, playerY, PROJECTILE_SIZE, playerSize))
+            if (detectCollisions(enemyLX[enemyshotIndex], enemyLY[enemyshotIndex], playerHitBoxX, playerHitBoxY, PROJECTILE_SIZE, playerHitBoxSize))
             {
                 // check -collision
                 enemyLS[enemyshotIndex] = FALSE; // disable projectile

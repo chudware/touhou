@@ -8,6 +8,7 @@
 extern int playerSpeed;
 extern int playerX;
 extern int playerY;
+extern int playerIsFocus;
 extern int playerSize;
 extern int PROJECTILE_SIZE;
 extern int i;

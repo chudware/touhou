@@ -3,9 +3,12 @@
 
 extern int playerX;
 extern int playerY;
+extern int playerHitBoxX;
+extern int playerHitBoxY;
 extern int enemyX;
 extern int enemyY;
 extern int playerSize;
+extern int playerHitBoxSize;
 extern int enemySize;
 extern int playerHP;
 extern int enemyHP;
