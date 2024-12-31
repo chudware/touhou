@@ -5,8 +5,16 @@
 // player
 int playerX;
 int playerY;
+int playerHitBoxX;
+int playerHitBoxY;
 int playerHP;
 int playerSize = 16;
+int playerHitBoxSize = 2;
+// where to place the hitbox relative to the player sprite
+// this seems fine
+int playerHitBoxOffset = (16-8)/2;
+// true if player is pressing focus
+int playerIsFocus = 0;
 int playershot;
 int playerSpeed = 1;
 int i;

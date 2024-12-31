@@ -4,11 +4,12 @@
 #include "_global.h"
 #include "updateSprites.h"
 
+int shootPlayerTicks = 0;
 void shootPlayerProjectiles(void)
 {
     if (joypad() & J_A)
     {
-        if (1)
+        if (shootPlayerTicks % 10 == 0)
         {
             for (i = 0; i < MAX_PROJECTILES; i++)
             {
@@ -27,6 +28,7 @@ void shootPlayerProjectiles(void)
     {
         playershot = 0;
     }
+    shootPlayerTicks += 1;
 }
 
 void movePlayerProjectiles(void)

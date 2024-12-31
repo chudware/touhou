@@ -4,32 +4,48 @@
 
 void playerMovement(void)
 {
-  // player movement
+  // focus
+  if(joypad() & J_B)
+    {
+      playerSpeed = 1;
+      playerIsFocus = 1;
+    }
+  else
+    {
+      playerSpeed = 2;
+      playerIsFocus = 0;
+    }
+  
+   // player movement
   if (joypad() & J_RIGHT)
   {
-    playerX += 1;
+    playerX += playerSpeed;
     if (playerX >= 152)
-      playerX -= 1;
+      playerX -= playerSpeed;
   }
 
   if (joypad() & J_LEFT)
   {
-    playerX -= 1;
+    playerX -= playerSpeed;
     if (playerX <= 8)
-      playerX += 1;
+      playerX += playerSpeed;
   }
 
   if (joypad() & J_DOWN)
   {
-    playerY += 1;
+    playerY += playerSpeed;
     if (playerY >= 144)
-      playerY -= 1;
+      playerY -= playerSpeed;
   }
 
   if (joypad() & J_UP)
   {
-    playerY -= 1;
+    playerY -= playerSpeed;
     if (playerY <= 16)
-      playerY += 1;
+      playerY += playerSpeed;
   }
+
+  // move the hitbox
+  playerHitBoxX = playerX + playerHitBoxOffset;
+  playerHitBoxY = playerY + playerHitBoxOffset;
 }
