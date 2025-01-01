@@ -12,7 +12,7 @@
 #include "sprites.h"
 
 const UWORD backgroundpalette[] = {
-    RGB_LIGHTGRAY, RGB_LIGHTGRAY, RGB_LIGHTGRAY, RGB_LIGHTGRAY};
+    RGB_SKYBLUE, RGB_LIGHTGRAY, RGB_LIGHTGRAY, RGB_LIGHTGRAY};
 
 const UWORD spritepalette[] = {
     /* Gameboy Color palette 0 */
