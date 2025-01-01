@@ -59,46 +59,46 @@
 #define spritesCGBPal0c3 0
 
 /* Gameboy Color palette 1 */
-#define spritesCGBPal1c0 31534
-#define spritesCGBPal1c1 31278
-#define spritesCGBPal1c2 31971
-#define spritesCGBPal1c3 25602
+#define spritesCGBPal1c0 32767
+#define spritesCGBPal1c1 4093
+#define spritesCGBPal1c2 3223
+#define spritesCGBPal1c3 0
 
 /* Gameboy Color palette 2 */
-#define spritesCGBPal2c0 21887
-#define spritesCGBPal2c1 20703
-#define spritesCGBPal2c2 12311
-#define spritesCGBPal2c3 7213
+#define spritesCGBPal2c0 32766
+#define spritesCGBPal2c1 8220
+#define spritesCGBPal2c2 6166
+#define spritesCGBPal2c3 3114
 
 /* Gameboy Color palette 3 */
-#define spritesCGBPal3c0 6076
-#define spritesCGBPal3c1 8935
-#define spritesCGBPal3c2 6596
-#define spritesCGBPal3c3 5344
+#define spritesCGBPal3c0 16421
+#define spritesCGBPal3c1 11302
+#define spritesCGBPal3c2 14377
+#define spritesCGBPal3c3 9259
 
 /* Gameboy Color palette 4 */
-#define spritesCGBPal4c0 6076
-#define spritesCGBPal4c1 8935
-#define spritesCGBPal4c2 6596
-#define spritesCGBPal4c3 5344
+#define spritesCGBPal4c0 15328
+#define spritesCGBPal4c1 992
+#define spritesCGBPal4c2 7136
+#define spritesCGBPal4c3 13288
 
 /* Gameboy Color palette 5 */
-#define spritesCGBPal5c0 6076
-#define spritesCGBPal5c1 8935
-#define spritesCGBPal5c2 6596
-#define spritesCGBPal5c3 5344
+#define spritesCGBPal5c0 29823
+#define spritesCGBPal5c1 26719
+#define spritesCGBPal5c2 31871
+#define spritesCGBPal5c3 30270
 
 /* Gameboy Color palette 6 */
-#define spritesCGBPal6c0 6076
-#define spritesCGBPal6c1 8935
-#define spritesCGBPal6c2 6596
-#define spritesCGBPal6c3 5344
+#define spritesCGBPal6c0 32646
+#define spritesCGBPal6c1 32741
+#define spritesCGBPal6c2 30592
+#define spritesCGBPal6c3 32579
 
 /* Gameboy Color palette 7 */
-#define spritesCGBPal7c0 6076
-#define spritesCGBPal7c1 8935
-#define spritesCGBPal7c2 6596
-#define spritesCGBPal7c3 5344
+#define spritesCGBPal7c0 10274
+#define spritesCGBPal7c1 8227
+#define spritesCGBPal7c2 4136
+#define spritesCGBPal7c3 4141
 /* CGBpalette entries. */
 extern const unsigned char spritesCGB[];
 /* Start of tile array. */

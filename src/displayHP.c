@@ -3,7 +3,7 @@
 
 void displayPlayerHP(void)
 {
-
+    set_sprite_prop(30, 3); // colors
     if (playerHP == 100)
     {
         set_sprite_tile(30, 2); // full
@@ -25,7 +25,7 @@ void displayPlayerHP(void)
 
 void displayEnemyHP(void)
 {
-
+    set_sprite_prop(29, 3); // colors
     if (enemyHP == 500)
     {
         set_sprite_tile(29, 2); // full

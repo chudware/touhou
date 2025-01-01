@@ -64,7 +64,7 @@ void resetGame()
   SPRITES_8x8;
 
   // player sprites
-  set_sprite_palette(1, 3, &spritepalette[3]);
+  set_sprite_palette(1, 3, &spritepalette[0]);
   set_sprite_data(1, 24, sprites);
 
   set_sprite_tile(1, 16);
@@ -83,7 +83,9 @@ void resetGame()
   for (i = 10; i < MAX_PROJECTILES; i++) // moved i from 5 to 10
   {                                      // id 5 to MAX_PROJECTILES
     set_sprite_tile(i, 6);
+    set_sprite_prop(i, 2);
   }
+
   // spawns boss/enemy
   setEnemy();
   SHOW_SPRITES;
