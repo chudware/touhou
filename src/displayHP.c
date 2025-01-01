@@ -6,25 +6,20 @@ void displayPlayerHP(void)
 
     if (playerHP == 100)
     {
-        set_sprite_tile(30, 21); // full
+        set_sprite_tile(30, 2); // full
     }
     if (playerHP <= 99)
     {
-        set_sprite_tile(30, 20); // mostly full
+        set_sprite_tile(30, 3); // mostly full
     }
     if (playerHP <= 50)
     {
-        set_sprite_tile(30, 19); // mostly full
+        set_sprite_tile(30, 4); // mostly full
     }
     if (playerHP <= 25)
     {
-        set_sprite_tile(30, 18); // mostly full
+        set_sprite_tile(30, 5); // mostly full
     }
-    if (playerHP <= 0)
-    {
-        set_sprite_tile(30, 17); // mostly full
-    }
-
     move_sprite(30, 150, 18); // update hp
 }
 
@@ -33,24 +28,19 @@ void displayEnemyHP(void)
 
     if (enemyHP == 500)
     {
-        set_sprite_tile(29, 21); // full
+        set_sprite_tile(29, 2); // full
     }
     if (enemyHP <= 499)
     {
-        set_sprite_tile(29, 20); // mostly full
+        set_sprite_tile(29, 3); // mostly full
     }
     if (enemyHP <= 250)
     {
-        set_sprite_tile(29, 19); // half full
+        set_sprite_tile(29, 4); // half full
     }
     if (enemyHP <= 125)
     {
-        set_sprite_tile(29, 18); // mostly empty
+        set_sprite_tile(29, 5); // mostly empty
     }
-    if (enemyHP == 0)
-    {
-        set_sprite_tile(29, 17); // empty
-    }
-
     move_sprite(29, 18, 18); // update hp
 }

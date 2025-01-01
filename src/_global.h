@@ -2,7 +2,7 @@
 #define GLOBAL_H
 
 #define MAX_PROJECTILES 16
-#define BASE_TILE_PROJECTILE 6
+#define BASE_TILE_PROJECTILE 10
 
 // player
 extern int playershot;

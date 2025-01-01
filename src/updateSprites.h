@@ -1,7 +1,7 @@
 #ifndef UPDATESPRITES_H
 #define UPDATESPRITES_H
 
-#define BASE_TILE_PROJECTILE 6 // sets starter tile id (after 1 - 4 for player)
+#define BASE_TILE_PROJECTILE 10 // sets starter tile id (after 1 - 4 for player)
 #define MAX_PROJECTILES 16
 
 // player
