@@ -25,22 +25,22 @@ void displayPlayerHP(void)
 
 void displayEnemyHP(void)
 {
-    set_sprite_prop(29, 3); // colors
+    set_sprite_prop(31, 3); // colors
     if (enemyHP == 500)
     {
-        set_sprite_tile(29, 2); // full
+        set_sprite_tile(31, 2); // full
     }
     if (enemyHP <= 499)
     {
-        set_sprite_tile(29, 3); // mostly full
+        set_sprite_tile(31, 3); // mostly full
     }
     if (enemyHP <= 250)
     {
-        set_sprite_tile(29, 4); // half full
+        set_sprite_tile(31, 4); // half full
     }
     if (enemyHP <= 125)
     {
-        set_sprite_tile(29, 5); // mostly empty
+        set_sprite_tile(31, 5); // mostly empty
     }
-    move_sprite(29, 18, 18); // update hp
+    move_sprite(31, 18, 18); // update hp
 }

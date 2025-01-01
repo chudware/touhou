@@ -32,6 +32,12 @@ const UWORD spritepalette[] = {
     spritesCGBPal2c1,
     spritesCGBPal2c2,
     spritesCGBPal2c3,
+
+    /* Gameboy Color palette 3 */
+    spritesCGBPal3c0,
+    spritesCGBPal3c1,
+    spritesCGBPal3c2,
+    spritesCGBPal3c3,
 };
 
 int quit = 0;

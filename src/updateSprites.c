@@ -34,15 +34,15 @@ void updateSprites(void)
     }
 
     // update enemy
-    move_sprite(21, enemyX, enemyY);
-    move_sprite(22, enemyX + 8 * 1, enemyY);
-    move_sprite(23, enemyX + 8 * 2, enemyY);
+    move_sprite(21, enemyX, enemyY);                      // top left 
+    move_sprite(22, enemyX + 8 * 1, enemyY);              // top center
+    move_sprite(23, enemyX + 8 * 2, enemyY);              // top right
 
-    move_sprite(24, enemyX, enemyY + 8 * 1);
-    move_sprite(25, enemyX + 8 * 1, enemyY + 8 * 1);
-    move_sprite(26, enemyX + 8 * 2, enemyY + 8 * 1);
+    move_sprite(24, enemyX, enemyY + 8 * 1);              // center left
+    move_sprite(25, enemyX + 8 * 1, enemyY + 8 * 1);      // center
+    move_sprite(26, enemyX + 8 * 2, enemyY + 8 * 1);      // center right
 
-    move_sprite(27, enemyX, enemyY + 8 * 2);
-    move_sprite(28, enemyX + 8 * 1, enemyY + 8 * 2);
-    //move_sprite(29, enemyX + 8 * 3, enemyY + 8 * 2);
+    move_sprite(27, enemyX, enemyY + 8 * 2);              // bottom left
+    move_sprite(28, enemyX + 8 * 1, enemyY + 8 * 2);      // bottom center
+    move_sprite(29, enemyX + 8 * 2, enemyY + 8 * 2);      // bottom right
 }

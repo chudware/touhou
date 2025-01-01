@@ -70,20 +70,22 @@ void updateEnemyProjectiles(void)
 
 void setEnemy(void)
 {
-    set_sprite_prop(21, 2);     // colors
+    set_sprite_prop(21, 3);     // colors
     set_sprite_tile(21, 7);     // top left
-    set_sprite_prop(22, 2);     // colors
+    set_sprite_prop(22, 3);     // colors
     set_sprite_tile(22, 8);     // top
+    set_sprite_prop(23, 3);     // colors
+    set_sprite_tile(23, 9);     // top
     set_sprite_prop(24, 2);     // colors
     set_sprite_tile(24, 10);    // top right
-
     set_sprite_prop(25, 2);     // colors
     set_sprite_tile(25, 11);
     set_sprite_prop(26, 2);     // colors
     set_sprite_tile(26, 12);
-
     set_sprite_prop(27, 2);     // colors
     set_sprite_tile(27, 13);
     set_sprite_prop(28, 2);     // colors
     set_sprite_tile(28, 14);
+    set_sprite_prop(29, 2);     // colors
+    set_sprite_tile(29, 15);
 }
