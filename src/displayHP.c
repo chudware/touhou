@@ -14,11 +14,11 @@ void displayPlayerHP(void)
     }
     if (playerHP <= 50)
     {
-        set_sprite_tile(30, 4); // mostly full
+        set_sprite_tile(30, 4); // half full
     }
     if (playerHP <= 25)
     {
-        set_sprite_tile(30, 5); // mostly full
+        set_sprite_tile(30, 5); // mostly empty
     }
     move_sprite(30, 150, 18); // update hp
 }
