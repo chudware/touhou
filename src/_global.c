@@ -8,11 +8,11 @@ int playerY;
 int playerHitBoxX;
 int playerHitBoxY;
 int playerHP;
-int playerSize = 16;
+int playerSize = 24;
 int playerHitBoxSize = 2;
 // where to place the hitbox relative to the player sprite
 // this seems fine
-int playerHitBoxOffset = (16-8)/2;
+int playerHitBoxOffset = (24-8)/2;
 // true if player is pressing focus
 int playerIsFocus = 0;
 int playershot;
@@ -25,10 +25,10 @@ int lx[MAX_PROJECTILES]; // projectile x's
 int ly[MAX_PROJECTILES]; // projectile y's
 
 // enemy
-int enemyX = 80;
+int enemyX = 79;    // enemy sprite in not centered in assets.gbr thus the odd number
 int enemyY = 20;
 int enemyHP;
-int enemySize = 16;
+int enemySize = 24;
 int enemyshot;
 int enemyshotIndex;
 int enemyLS[ENEMY_MAX_PROJECTILES];

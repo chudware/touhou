@@ -46,7 +46,7 @@ void resetGame()
   enemyHP = 500;
 
   // reset player position
-  playerX = 80;
+  playerX = 76;
   playerY = 128;
 
   set_bkg_palette(0, 1, &backgroundpalette[0]);
