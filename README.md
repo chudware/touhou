@@ -2,7 +2,7 @@
 
 Touhou demake
 
-![alt text](touhou-0.png "Touhou")
+![alt text](touhou.png "Touhou")
 
 ## Dependencies
 
