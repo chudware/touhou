@@ -10,33 +10,33 @@
 #include "collisions.h"
 #include "updateSprites.h"
 #include "sprites.h"
-#include "BackgroundData.h"
-#include "BackgroundMap.h"
+#include "backgroundData.h"
+#include "backgroundMap.h"
 
 const UWORD backgroundpalette[] = {
     /* Gameboy Color palette 0 */
-    BackgroundDataCGBPal0c0,
-    BackgroundDataCGBPal0c1,
-    BackgroundDataCGBPal0c2,
-    BackgroundDataCGBPal0c3,
+    backgroundDataCGBPal0c0,
+    backgroundDataCGBPal0c1,
+    backgroundDataCGBPal0c2,
+    backgroundDataCGBPal0c3,
 
     /* Gameboy Color palette 1 */
-    BackgroundDataCGBPal1c0,
-    BackgroundDataCGBPal1c1,
-    BackgroundDataCGBPal1c2,
-    BackgroundDataCGBPal1c3,
+    backgroundDataCGBPal1c0,
+    backgroundDataCGBPal1c1,
+    backgroundDataCGBPal1c2,
+    backgroundDataCGBPal1c3,
 
     /* Gameboy Color palette 2 */
-    BackgroundDataCGBPal2c0,
-    BackgroundDataCGBPal2c1,
-    BackgroundDataCGBPal2c2,
-    BackgroundDataCGBPal2c3,
+    backgroundDataCGBPal2c0,
+    backgroundDataCGBPal2c1,
+    backgroundDataCGBPal2c2,
+    backgroundDataCGBPal2c3,
 
     /* Gameboy Color palette 3 */
-    BackgroundDataCGBPal3c0,
-    BackgroundDataCGBPal3c1,
-    BackgroundDataCGBPal3c2,
-    BackgroundDataCGBPal3c3,
+    backgroundDataCGBPal3c0,
+    backgroundDataCGBPal3c1,
+    backgroundDataCGBPal3c2,
+    backgroundDataCGBPal3c3,
 };
 
 const UWORD spritepalette[] = {
@@ -83,19 +83,19 @@ void resetGame()
   set_bkg_palette(0, 4, &backgroundpalette[0]);
 
   // set background data
-  set_bkg_data(0, 2, BackgroundData);
+  set_bkg_data(0, 2, backgroundData);
 
   // switch to 2nd video memory bank
   VBK_REG = 1;
 
   // set background color palette map, do this first
-  set_bkg_tiles(0, 0, BackgroundMapWidth, BackgroundMapHeight, BackgroundMapPLN1);
+  set_bkg_tiles(0, 0, backgroundMapWidth, backgroundMapHeight, backgroundMapPLN1);
 
   // switch back to 1st video memory bank
   VBK_REG = 0;
 
   // set background map
-  set_bkg_tiles(0, 0, BackgroundMapWidth, BackgroundMapHeight, BackgroundMapPLN0);
+  set_bkg_tiles(0, 0, backgroundMapWidth, backgroundMapHeight, backgroundMapPLN0);
 
   // sets bg
   set_sprite_palette(0, 1, &spritepalette[0]);

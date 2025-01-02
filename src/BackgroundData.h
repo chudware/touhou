@@ -22,87 +22,87 @@
 
 */
 
-#ifndef __BackgroundData_h_INCLUDE
-#define __BackgroundData_h_INCLUDE
+#ifndef __backgroundData_h_INCLUDE
+#define __backgroundData_h_INCLUDE
 
 /* Bank of tiles. */
-#define BackgroundDataBank 0
+#define backgroundDataBank 0
 
 /* Super Gameboy palette 0 */
-#define BackgroundDataSGBPal0c0 6076
-#define BackgroundDataSGBPal0c1 8935
-#define BackgroundDataSGBPal0c2 6596
-#define BackgroundDataSGBPal0c3 5344
+#define backgroundDataSGBPal0c0 6076
+#define backgroundDataSGBPal0c1 8935
+#define backgroundDataSGBPal0c2 6596
+#define backgroundDataSGBPal0c3 5344
 
 /* Super Gameboy palette 1 */
-#define BackgroundDataSGBPal1c0 6076
-#define BackgroundDataSGBPal1c1 8935
-#define BackgroundDataSGBPal1c2 6596
-#define BackgroundDataSGBPal1c3 5344
+#define backgroundDataSGBPal1c0 6076
+#define backgroundDataSGBPal1c1 8935
+#define backgroundDataSGBPal1c2 6596
+#define backgroundDataSGBPal1c3 5344
 
 /* Super Gameboy palette 2 */
-#define BackgroundDataSGBPal2c0 6076
-#define BackgroundDataSGBPal2c1 8935
-#define BackgroundDataSGBPal2c2 6596
-#define BackgroundDataSGBPal2c3 5344
+#define backgroundDataSGBPal2c0 6076
+#define backgroundDataSGBPal2c1 8935
+#define backgroundDataSGBPal2c2 6596
+#define backgroundDataSGBPal2c3 5344
 
 /* Super Gameboy palette 3 */
-#define BackgroundDataSGBPal3c0 6076
-#define BackgroundDataSGBPal3c1 8935
-#define BackgroundDataSGBPal3c2 6596
-#define BackgroundDataSGBPal3c3 5344
+#define backgroundDataSGBPal3c0 6076
+#define backgroundDataSGBPal3c1 8935
+#define backgroundDataSGBPal3c2 6596
+#define backgroundDataSGBPal3c3 5344
 
 /* Gameboy Color palette 0 */
-#define BackgroundDataCGBPal0c0 32767
-#define BackgroundDataCGBPal0c1 8935
-#define BackgroundDataCGBPal0c2 6596
-#define BackgroundDataCGBPal0c3 5344
+#define backgroundDataCGBPal0c0 32767
+#define backgroundDataCGBPal0c1 8935
+#define backgroundDataCGBPal0c2 6596
+#define backgroundDataCGBPal0c3 5344
 
 /* Gameboy Color palette 1 */
-#define BackgroundDataCGBPal1c0 32767
-#define BackgroundDataCGBPal1c1 31702
-#define BackgroundDataCGBPal1c2 30528
-#define BackgroundDataCGBPal1c3 26634
+#define backgroundDataCGBPal1c0 32767
+#define backgroundDataCGBPal1c1 31702
+#define backgroundDataCGBPal1c2 30528
+#define backgroundDataCGBPal1c3 26634
 
 /* Gameboy Color palette 2 */
-#define BackgroundDataCGBPal2c0 31710
-#define BackgroundDataCGBPal2c1 26425
-#define BackgroundDataCGBPal2c2 29596
-#define BackgroundDataCGBPal2c3 21140
+#define backgroundDataCGBPal2c0 31710
+#define backgroundDataCGBPal2c1 26425
+#define backgroundDataCGBPal2c2 29596
+#define backgroundDataCGBPal2c3 21140
 
 /* Gameboy Color palette 3 */
-#define BackgroundDataCGBPal3c0 32767
-#define BackgroundDataCGBPal3c1 403
-#define BackgroundDataCGBPal3c2 343
-#define BackgroundDataCGBPal3c3 1166
+#define backgroundDataCGBPal3c0 32767
+#define backgroundDataCGBPal3c1 403
+#define backgroundDataCGBPal3c2 343
+#define backgroundDataCGBPal3c3 1166
 
 /* Gameboy Color palette 4 */
-#define BackgroundDataCGBPal4c0 6076
-#define BackgroundDataCGBPal4c1 8935
-#define BackgroundDataCGBPal4c2 6596
-#define BackgroundDataCGBPal4c3 5344
+#define backgroundDataCGBPal4c0 6076
+#define backgroundDataCGBPal4c1 8935
+#define backgroundDataCGBPal4c2 6596
+#define backgroundDataCGBPal4c3 5344
 
 /* Gameboy Color palette 5 */
-#define BackgroundDataCGBPal5c0 6076
-#define BackgroundDataCGBPal5c1 8935
-#define BackgroundDataCGBPal5c2 6596
-#define BackgroundDataCGBPal5c3 5344
+#define backgroundDataCGBPal5c0 6076
+#define backgroundDataCGBPal5c1 8935
+#define backgroundDataCGBPal5c2 6596
+#define backgroundDataCGBPal5c3 5344
 
 /* Gameboy Color palette 6 */
-#define BackgroundDataCGBPal6c0 6076
-#define BackgroundDataCGBPal6c1 8935
-#define BackgroundDataCGBPal6c2 6596
-#define BackgroundDataCGBPal6c3 5344
+#define backgroundDataCGBPal6c0 6076
+#define backgroundDataCGBPal6c1 8935
+#define backgroundDataCGBPal6c2 6596
+#define backgroundDataCGBPal6c3 5344
 
 /* Gameboy Color palette 7 */
-#define BackgroundDataCGBPal7c0 6076
-#define BackgroundDataCGBPal7c1 8935
-#define BackgroundDataCGBPal7c2 6596
-#define BackgroundDataCGBPal7c3 5344
+#define backgroundDataCGBPal7c0 6076
+#define backgroundDataCGBPal7c1 8935
+#define backgroundDataCGBPal7c2 6596
+#define backgroundDataCGBPal7c3 5344
 /* CGBpalette entries. */
-extern const unsigned char BackgroundDataCGB[];
+extern const unsigned char backgroundDataCGB[];
 /* Start of tile array. */
-extern const unsigned char BackgroundData[];
+extern const unsigned char backgroundData[];
 
 #endif
 
