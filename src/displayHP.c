@@ -20,7 +20,7 @@ void displayPlayerHP(void)
     {
         set_sprite_tile(30, 5); // mostly empty
     }
-    move_sprite(30, 150, 18); // update hp
+    move_sprite(30, 158, 18); // update hp
 }
 
 void displayEnemyHP(void)
@@ -42,5 +42,5 @@ void displayEnemyHP(void)
     {
         set_sprite_tile(31, 5); // mostly empty
     }
-    move_sprite(31, 18, 18); // update hp
+    move_sprite(31, 10, 18); // update hp
 }
