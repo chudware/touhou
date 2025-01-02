@@ -97,7 +97,6 @@ void resetGame()
   // set background map
   set_bkg_tiles(0, 0, backgroundMapWidth, backgroundMapHeight, backgroundMapPLN0);
 
-  // sets bg
   set_sprite_palette(0, 1, &spritepalette[0]);
 
   // set sprites 8x8 mode
@@ -105,7 +104,7 @@ void resetGame()
 
   // player sprites
   set_sprite_palette(1, 3, &spritepalette[0]);
-  set_sprite_data(1, 25, sprites);
+  set_sprite_data(1, 26, sprites);
 
   set_sprite_tile(1, 16);
   set_sprite_tile(2, 17);

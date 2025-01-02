@@ -54,27 +54,27 @@
 
 /* Gameboy Color palette 0 */
 #define backgroundDataCGBPal0c0 32767
-#define backgroundDataCGBPal0c1 8935
-#define backgroundDataCGBPal0c2 6596
-#define backgroundDataCGBPal0c3 5344
+#define backgroundDataCGBPal0c1 31702
+#define backgroundDataCGBPal0c2 32074
+#define backgroundDataCGBPal0c3 26634
 
 /* Gameboy Color palette 1 */
 #define backgroundDataCGBPal1c0 32767
-#define backgroundDataCGBPal1c1 31702
-#define backgroundDataCGBPal1c2 30528
-#define backgroundDataCGBPal1c3 26634
+#define backgroundDataCGBPal1c1 0
+#define backgroundDataCGBPal1c2 0
+#define backgroundDataCGBPal1c3 0
 
 /* Gameboy Color palette 2 */
 #define backgroundDataCGBPal2c0 31710
-#define backgroundDataCGBPal2c1 26425
-#define backgroundDataCGBPal2c2 29596
-#define backgroundDataCGBPal2c3 21140
+#define backgroundDataCGBPal2c1 0
+#define backgroundDataCGBPal2c2 0
+#define backgroundDataCGBPal2c3 0
 
 /* Gameboy Color palette 3 */
 #define backgroundDataCGBPal3c0 32767
-#define backgroundDataCGBPal3c1 403
-#define backgroundDataCGBPal3c2 343
-#define backgroundDataCGBPal3c3 1166
+#define backgroundDataCGBPal3c1 0
+#define backgroundDataCGBPal3c2 0
+#define backgroundDataCGBPal3c3 0
 
 /* Gameboy Color palette 4 */
 #define backgroundDataCGBPal4c0 6076
