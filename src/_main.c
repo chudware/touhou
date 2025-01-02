@@ -81,6 +81,12 @@ const UWORD spritepalette[] = {
     spritesCGBPal6c1,
     spritesCGBPal6c2,
     spritesCGBPal6c3,
+
+    /* Gameboy Color palette 7 */
+    spritesCGBPal7c0,
+    spritesCGBPal7c1,
+    spritesCGBPal7c2,
+    spritesCGBPal7c3,
 };
 
 int quit = 0;
@@ -121,7 +127,7 @@ void resetGame()
   SPRITES_8x8;
 
   // player sprites
-  set_sprite_palette(1, 7, &spritepalette[0]);
+  set_sprite_palette(1, 8, &spritepalette[0]);
   set_sprite_data(1, 26, sprites);
 
   // top left
@@ -162,7 +168,7 @@ void resetGame()
   for (i = 10; i < MAX_PROJECTILES; i++) // moved i from 5 to 10
   {                                      // id 5 to MAX_PROJECTILES
     set_sprite_tile(i, 6);
-    set_sprite_prop(i, 6); // set projectile color to cyan
+    set_sprite_prop(i, 7); // set projectile color
   }
 
   // spawns boss/enemy
