@@ -10,9 +10,34 @@
 #include "collisions.h"
 #include "updateSprites.h"
 #include "sprites.h"
+#include "BackgroundData.h"
+#include "BackgroundMap.h"
 
 const UWORD backgroundpalette[] = {
-    RGB_SKYBLUE, RGB_LIGHTGRAY, RGB_LIGHTGRAY, RGB_LIGHTGRAY};
+    /* Gameboy Color palette 0 */
+    BackgroundDataCGBPal0c0,
+    BackgroundDataCGBPal0c1,
+    BackgroundDataCGBPal0c2,
+    BackgroundDataCGBPal0c3,
+
+    /* Gameboy Color palette 1 */
+    BackgroundDataCGBPal1c0,
+    BackgroundDataCGBPal1c1,
+    BackgroundDataCGBPal1c2,
+    BackgroundDataCGBPal1c3,
+
+    /* Gameboy Color palette 2 */
+    BackgroundDataCGBPal2c0,
+    BackgroundDataCGBPal2c1,
+    BackgroundDataCGBPal2c2,
+    BackgroundDataCGBPal2c3,
+
+    /* Gameboy Color palette 3 */
+    BackgroundDataCGBPal3c0,
+    BackgroundDataCGBPal3c1,
+    BackgroundDataCGBPal3c2,
+    BackgroundDataCGBPal3c3,
+};
 
 const UWORD spritepalette[] = {
     /* Gameboy Color palette 0 */
@@ -55,23 +80,32 @@ void resetGame()
   playerX = 76;
   playerY = 128;
 
-  set_bkg_palette(0, 1, &backgroundpalette[0]);
+  set_bkg_palette(0, 4, &backgroundpalette[0]);
 
-  // set_sprite_prop(0, 0); // solors
+  // set background data
+  set_bkg_data(0, 2, BackgroundData);
+
+  // switch to 2nd video memory bank
+  VBK_REG = 1;
+
+  // set background color palette map, do this first
+  set_bkg_tiles(0, 0, BackgroundMapWidth, BackgroundMapHeight, BackgroundMapPLN1);
+
+  // switch back to 1st video memory bank
+  VBK_REG = 0;
+
+  // set background map
+  set_bkg_tiles(0, 0, BackgroundMapWidth, BackgroundMapHeight, BackgroundMapPLN0);
 
   // sets bg
   set_sprite_palette(0, 1, &spritepalette[0]);
-  set_bkg_data(0, 20, sprites);
-
-  // set_bkg_tiles(0, 0, 20, 18, bgTilemap);
-  SHOW_BKG;
 
   // set sprites 8x8 mode
   SPRITES_8x8;
 
   // player sprites
   set_sprite_palette(1, 3, &spritepalette[0]);
-  set_sprite_data(1, 24, sprites);
+  set_sprite_data(1, 25, sprites);
 
   set_sprite_tile(1, 16);
   set_sprite_tile(2, 17);
@@ -94,6 +128,8 @@ void resetGame()
 
   // spawns boss/enemy
   setEnemy();
+
+  SHOW_BKG;
   SHOW_SPRITES;
   DISPLAY_ON;
 }
