@@ -75,6 +75,12 @@ const UWORD spritepalette[] = {
     spritesCGBPal5c1,
     spritesCGBPal5c2,
     spritesCGBPal5c3,
+
+    /* Gameboy Color palette 6 */
+    spritesCGBPal6c0,
+    spritesCGBPal6c1,
+    spritesCGBPal6c2,
+    spritesCGBPal6c3,
 };
 
 int quit = 0;
@@ -115,19 +121,41 @@ void resetGame()
   SPRITES_8x8;
 
   // player sprites
-  set_sprite_palette(1, 6, &spritepalette[0]);
+  set_sprite_palette(1, 7, &spritepalette[0]);
   set_sprite_data(1, 26, sprites);
 
+  // top left
+  set_sprite_prop(1, 2);
   set_sprite_tile(1, 16);
+  // top center
+  set_sprite_prop(2, 2);
   set_sprite_tile(2, 17);
+  // top right
+  set_sprite_prop(3, 2);
   set_sprite_tile(3, 18);
 
+  // center left
+  set_sprite_prop(4, 7);
   set_sprite_tile(4, 19);
+
+  // center
+  set_sprite_prop(5, 7);
   set_sprite_tile(5, 20);
+
+  // center right
+  set_sprite_prop(6, 7);
   set_sprite_tile(6, 21);
 
+  // bottom left
+  set_sprite_prop(7, 4);
   set_sprite_tile(7, 22);
+
+  // bottom center
+  set_sprite_prop(8, 4);
   set_sprite_tile(8, 23);
+
+  // bottom right
+  set_sprite_prop(9, 4);
   set_sprite_tile(9, 24);
 
   // set projectile sprites

@@ -81,7 +81,7 @@ void setEnemy(void)
     set_sprite_tile(23, 9);     // top right
 
     // center
-    set_sprite_prop(24, 2);     
+    set_sprite_prop(24, 3);     
     set_sprite_tile(24, 10);    // center left
 
     set_sprite_prop(25, 3);     
