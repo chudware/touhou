@@ -1,8 +1,11 @@
 # Touhou for the Game Boy
 
-Touhou demake
-
 ![alt text](touhou.png "Touhou")
+
+## Credits
+
+- MOONMAN (Original creator)
+- talbott9 (Optimization, bug fixes)
 
 ## Dependencies
 
