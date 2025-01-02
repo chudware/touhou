@@ -123,7 +123,7 @@ void resetGame()
   for (i = 10; i < MAX_PROJECTILES; i++) // moved i from 5 to 10
   {                                      // id 5 to MAX_PROJECTILES
     set_sprite_tile(i, 6);
-    set_sprite_prop(i, 2);
+    set_sprite_prop(i, 1);
   }
 
   // spawns boss/enemy
