@@ -60,44 +60,44 @@
 
 /* Gameboy Color palette 1 */
 #define spritesCGBPal1c0 32767
-#define spritesCGBPal1c1 7399
-#define spritesCGBPal1c2 5285
+#define spritesCGBPal1c1 31
+#define spritesCGBPal1c2 20
 #define spritesCGBPal1c3 0
 
 /* Gameboy Color palette 2 */
 #define spritesCGBPal2c0 32766
-#define spritesCGBPal2c1 8220
-#define spritesCGBPal2c2 6166
-#define spritesCGBPal2c3 3114
+#define spritesCGBPal2c1 11766
+#define spritesCGBPal2c2 20
+#define spritesCGBPal2c3 0
 
 /* Gameboy Color palette 3 */
 #define spritesCGBPal3c0 32766
-#define spritesCGBPal3c1 31831
-#define spritesCGBPal3c2 5285
+#define spritesCGBPal3c1 11766
+#define spritesCGBPal3c2 32767
 #define spritesCGBPal3c3 0
 
 /* Gameboy Color palette 4 */
 #define spritesCGBPal4c0 32767
-#define spritesCGBPal4c1 31
-#define spritesCGBPal4c2 13
+#define spritesCGBPal4c1 32281
+#define spritesCGBPal4c2 31865
 #define spritesCGBPal4c3 0
 
 /* Gameboy Color palette 5 */
 #define spritesCGBPal5c0 32766
-#define spritesCGBPal5c1 31611
-#define spritesCGBPal5c2 24478
+#define spritesCGBPal5c1 32281
+#define spritesCGBPal5c2 10570
 #define spritesCGBPal5c3 0
 
 /* Gameboy Color palette 6 */
 #define spritesCGBPal6c0 32766
-#define spritesCGBPal6c1 31831
-#define spritesCGBPal6c2 32247
+#define spritesCGBPal6c1 14111
+#define spritesCGBPal6c2 605
 #define spritesCGBPal6c3 0
 
 /* Gameboy Color palette 7 */
 #define spritesCGBPal7c0 32766
-#define spritesCGBPal7c1 32767
-#define spritesCGBPal7c2 1022
+#define spritesCGBPal7c1 21140
+#define spritesCGBPal7c2 10570
 #define spritesCGBPal7c3 0
 /* CGBpalette entries. */
 extern const unsigned char spritesCGB[];

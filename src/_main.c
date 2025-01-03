@@ -131,37 +131,37 @@ void resetGame()
   set_sprite_data(1, 26, sprites);
 
   // top left
-  set_sprite_prop(1, 2);
+  set_sprite_prop(1, 7);
   set_sprite_tile(1, 16);
   // top center
-  set_sprite_prop(2, 2);
+  set_sprite_prop(2, 7);
   set_sprite_tile(2, 17);
   // top right
-  set_sprite_prop(3, 2);
+  set_sprite_prop(3, 7);
   set_sprite_tile(3, 18);
 
   // center left
-  set_sprite_prop(4, 7);
+  set_sprite_prop(4, 5);
   set_sprite_tile(4, 19);
 
   // center
-  set_sprite_prop(5, 7);
+  set_sprite_prop(5, 5);
   set_sprite_tile(5, 20);
 
   // center right
-  set_sprite_prop(6, 7);
+  set_sprite_prop(6, 5);
   set_sprite_tile(6, 21);
 
   // bottom left
-  set_sprite_prop(7, 4);
+  set_sprite_prop(7, 5);
   set_sprite_tile(7, 22);
 
   // bottom center
-  set_sprite_prop(8, 4);
+  set_sprite_prop(8, 6);
   set_sprite_tile(8, 23);
 
   // bottom right
-  set_sprite_prop(9, 4);
+  set_sprite_prop(9, 6);
   set_sprite_tile(9, 24);
 
   // set projectile sprites
